@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex demo</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } */
+        .container{
+            height: 500px;
+            width: 500px;
+            border: 5px solid black;
+            background-image: linear-gradient(green,white);
+           /* display: flex; */
+           display: flex;
+            flex-direction: row;
+           position: relative;
+        }
+        .section-1{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            border: 2px solid yellow;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+        .section-2{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            border: 2px solid yellow;
+            justify-content: flex-end;
+            position: absolute;
+            top: 0;
+            right :0;
+        }
+        .section-3{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            border: 2px solid yellow;
+            position: absolute;
+           bottom: 0;
+           left:0;
+
+        }
+        .section-4{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            border: 2px solid yellow;
+            position: absolute;
+            bottom:0;
+            right:0;
+        }
+        .section-5{
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            border: 2px solid yellow;
+            position: absolute;
+            top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="section-1">Child 1</div>
+      <div class="section-2">Child 2</div>
+      <div class="section-3">Child 3</div>
+      <div class="section-4">Child 4</div>
+      <div class="section-5">Child 5</div>
+    </div>
+  </body>
+</html>
