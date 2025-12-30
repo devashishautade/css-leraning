@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Responsive layout साठी -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Layout</title>
+
+    <style>
+        /* ===== Global Reset ===== */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* padding + border width मध्ये count होतो */
+        }
+
+        /* ===== Main Container ===== */
+        .container{
+            background-color: black;
+            width: 100%;
+            height: 100vh;
+
+            /* Flexbox layout */
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            padding: 40px;
+        }
+
+        /* ===== Left Content Section ===== */
+        .flex-1{
+            color: white;
+            width: 45%;
+        }
+
+        .flex-1 h3{
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .flex-1 p{
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* ===== Button Default Style ===== */
+        .flex-1 button{
+            background-color: #2d6cdf;
+            color: white;
+
+            padding: 12px 24px;
+            font-size: 16px;
+
+            border: 5px solid transparent; /* hover वर size change टाळण्यासाठी */
+            border-radius: 6px;
+
+            cursor: pointer; /* hand icon */
+            transition: all 0.3s ease; /* smooth hover */
+        }
+
+        /* ===== Button Hover Effect ===== */
+        .flex-1 button:hover{
+            background-color: #1b4fb8;
+            border-color: yellow;
+            color: rgb(196, 198, 255);
+            transform: scale(1.05); /* थोडा zoom effect */
+        }
+
+        /* ===== Right Image Section ===== */
+        .flex-2 img{
+            width: 400px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== Main Wrapper ===== -->
+    <div class="container">
+
+        <!-- ===== Text Content ===== -->
+        <div class="flex-1">
+            <h3>World Best CSS Course</h3>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Esse labore sed reprehenderit libero doloremque.
+                Vero quas ratione nam similique non cupiditate dolore soluta.
+            </p>
+
+            <button type="submit">Watch Now</button>
+        </div>
+
+        <!-- ===== Image Content ===== -->
+        <div class="flex-2">
+            <img 
+                src="https://images.unsplash.com/photo-1766059965561-e0e2a892031a?w=600&auto=format&fit=crop&q=60"
+                alt="Nature image">
+        </div>
+
+    </div>
+
+</body>
+</html>
